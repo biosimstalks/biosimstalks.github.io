@@ -53,9 +53,10 @@ a:hover{text-decoration:underline}
   background: var(--brand);
   color: #fff;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: flex-flex-start;
+  justify-content: flex-start;
   overflow: hidden;
+  gap: 20px;
 }
 
 
