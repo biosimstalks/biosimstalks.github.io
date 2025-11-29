@@ -23,7 +23,7 @@ body{
   background:#fff;
   position:sticky; top:0; z-index:10;
 }
-.navbar-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:960px;margin:0 auto;padding:12px 24px}
+.navbar-inner{display:flex;align-items:center;justify-content:flex-start;gap:16px;max-width:960px;margin:0 auto;padding:12px 24px}
 .logo{font-weight:700;text-decoration:none;color:var(--text)}
 .nav-links{display:flex;flex-wrap:wrap;gap:12px}
 .nav-links a{
