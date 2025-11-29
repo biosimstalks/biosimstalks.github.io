@@ -1,23 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BioSim Talks</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>My Lab Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="access.html">Access & Contact</a></li>
-    <li><a href="past.html">Past Seminars</a></li>
-  </ul>
-</nav>
 
-<h1>BioSim Talks</h1>
+  <!-- English content -->
+  <div class="lang en">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="logo">Shinobu Lab</a>
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="research.html">Research</a>
+          <a href="contact.html">Contact/Access</a>
+          <a href="publications.html">Publications</a>
+          <a href="members.html">Members</a>
+          <a href="links.html">Links</a>
+          <a class="lang-link" href="#" onclick="toggleLanguage(); return false;">日本語</a>
+        </nav>
+      </div>
+    </header>
+
+<section class="hero" style="--hero-image:url('images/banner.jpg')">
+  <div class="hero-inner">
+    <h1 class="hero-title">BioSim Talks</h1>
+    <p class="hero-sub">An IPR Seminar Series in collaboration with WPI-PRIMe</p>
+  </div>
+</section>
+
+
+<div class="hero-block" style="position: relative;">
+  <img src="images/pamphlet.png"
+       class="hero-image"
+       style="width:100%; max-height:600px; object-fit:contain; display:block;">
+
+  <div class="hero-text"
+       style="
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%, -50%);
+         background:rgba(255,255,255,0.15);
+	 backdrop-filter: blur(4px);
+         padding:20px;
+	 max-width: 80%;
+	 line-height:1.4;
+	 text-shadow: 0 0 3px rgba(255,255,255,0.8);
+	 font-size: 1.1em;
+         border-radius:10px;
+         text-align:left;">
+	  <p style="margin-bottom: 1em;">
+    We are a research group at the University of Osaka (PRIMe) studying molecular mechanisms that shape the behavior of biomolecular systems in health and disease. We focus on how proteins and other biomolecules interact with small molecules, peptides, regulatory partners, and therapeutic compounds, and how mutations or drugs modify these interactions in ways that affect biological function. <br>
+    </p>
+    <p style="margin-bottom: 1em;">
+    Our work uses molecular dynamics simulations, including atomistic models, enhanced-sampling methods, free-energy calculations, and coarse-grained approaches, complemented by structural modeling and docking. We collaborate closely with experimental groups and computational partners to bridge molecular-level behavior with broader biological and clinically relevant questions. <br>
+    </p>
+	Some of the systems we study include receptor tyrosine kinases and their signaling complexes, growth-factor receptor pathways, and viral proteins such as the SARS-CoV-2 Spike.
+  </div>
+</div>
+
+
 
 <p>Welcome to the monthly BioSim Seminar Series.  
 Here we host talks on biological simulations, computational biophysics, and systems biology.</p>
